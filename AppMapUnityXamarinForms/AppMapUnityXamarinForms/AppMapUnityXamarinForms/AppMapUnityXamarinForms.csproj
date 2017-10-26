@@ -37,10 +37,18 @@
   <ItemGroup>
     <Compile Include="Infrastructure\AppMapViewModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DataSource.cs" />
+    <Compile Include="Services\IDataSource.cs" />
+    <Compile Include="Services\ISalesSevice.cs" />
+    <Compile Include="Services\SalesSevice.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="ViewModels\nuevaViewModel.cs" />
     <Compile Include="ViewModels\VentasViewModel.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nueva.xaml.cs">
+      <DependentUpon>nueva.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Ventas.xaml.cs">
       <DependentUpon>Ventas.xaml</DependentUpon>
@@ -92,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Ventas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\nueva.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
