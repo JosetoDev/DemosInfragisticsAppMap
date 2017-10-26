@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    x:Class="AppMapMasterDetail.Views.MainPage"
+    Title="Main Page">
+
+
+  <MasterDetailPage.Master>
+    <ContentPage Title="Master">
+	  <StackLayout>
+	      <Button Text="Clientes" Command="{Binding Path=NavigateCommand}" CommandParameter="NavigationPage/Clientes" />
+          <Button Text="Ventas" Command="{Binding Path=NavigateCommand}" CommandParameter="NavigationPage/Ventas" />
+          <Button Text="Graficos" Command="{Binding Path=NavigateCommand}" CommandParameter="NavigationPage/Graficos" />
+	  </StackLayout>
+    </ContentPage>
+  </MasterDetailPage.Master>
+
+
+
+</MasterDetailPage>
+
